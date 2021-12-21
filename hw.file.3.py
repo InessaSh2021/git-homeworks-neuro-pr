@@ -2,7 +2,7 @@ from pprint import pprint
 
 import os
 
-def sorted_file_list():
+def sorted_file_list(file_list, text):
   file_list = os.scandir('https://github.com/netology-code/py-homework-basic-files/tree/master/2.4.files/sorted')
 
   with open (file_list, text) as file_name:
