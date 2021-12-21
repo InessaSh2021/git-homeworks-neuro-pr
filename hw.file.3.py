@@ -7,17 +7,17 @@ def sorted_file_list():
 
   with open (file_list, text) as file_name:
     number = 0
-    dicht = {}
+    dict = {}
     for file_name in file_list:
       content = file_name.read()
       number = len(content)
-      dicht.append(
+      dict.append(
         {file_name : number }
       )
-    sorted(dicht.number(), reverse = True)
+    sorted(dict.number(), reverse = True)
   
   for file_name in file_list:
-    for file_name, number in dicht.items():
+    for file_name, number in dict.items():
       res = print(f'{file_name}\n {number} \n {text} \n')
 
 pprint(sorted_file_list(res))
