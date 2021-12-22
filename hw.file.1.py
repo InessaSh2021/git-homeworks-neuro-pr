@@ -1,7 +1,7 @@
 from pprint import pprint
 
  
-    with open('cook_book_file.txt') as file:
+    with open('cook_book_file.txt', encording='UTF-8') as file:
         cook_book = dict()
         for line in file:
             dishes = line.strip()
