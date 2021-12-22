@@ -1,6 +1,6 @@
 from pprint import pprint
 
-def get_dict('cook_book_file.txt'):  
+ 
     with open('cook_book_file.txt') as file:
         cook_book = dict()
         for line in file:
@@ -16,5 +16,5 @@ def get_dict('cook_book_file.txt'):
                     )
             cook_book[dishes] = temp_list
             file.readline()
-        return cook_book
-pprint(get_dict('cook_book_file.txt'))
+       
+pprint(cook_book)
