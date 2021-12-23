@@ -20,7 +20,7 @@ def sorted_file_list(file_list, text):
       )  
       lagest = max(dict.values())
       final_dict = {file:number for file, number in dict.items() if number == lagest}       
-      if number
+  
     sorted(dict.number(), reverse = True)
   
   for file in file_list:
