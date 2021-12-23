@@ -1,23 +1,30 @@
 from pprint import pprint
 
 import os
+lagest = 0
 
 def sorted_file_list(file_list, text):
-  file_list = os.scandir('https://github.com/netology-code/py-homework-basic-files/tree/master/2.4.files/sorted')
+  file_list = os.scandir('D://HW')
 
-  with open (file_list, text) as file_name:
+  with open (file_list, text) as file:
     number = 0
     dict = {}
-    for file_name in file_list:
-      content = file_name.read()
+    for file in file_list:
+      content = file.read()
+      number = len(content)
+      or file in file_list:
+      content = file.read()
       number = len(content)
       dict.append(
-        {file_name : number }
-      )
+        {file : number }
+      )  
+      lagest = max(dict.values())
+      final_dict = {file:number for file, number in dict.items() if number == lagest}       
+      if number
     sorted(dict.number(), reverse = True)
   
-  for file_name in file_list:
-    for file_name, number in dict.items():
-      res = print(f'{file_name}\n {number} \n {text} \n')
+  for file in file_list:
+    for file, number in dict.items():
+      res = print(f'{file}\n {number} \n {text} \n')
 
 pprint(sorted_file_list(res))
