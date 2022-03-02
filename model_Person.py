@@ -3,7 +3,7 @@ import requests
 url = 'https://vk.com/id281950100?z=photo281950100_384882748%2Fphotos281950100'
 
 class Person:
-  '''Модель участника сайта'''
+  '''РњРѕРґРµР»СЊ СѓС‡Р°СЃС‚РЅРёРєР° СЃР°Р№С‚Р°'''
   
   def __init__(self, name, surname, gender, email):
     self.name = name
@@ -13,9 +13,9 @@ class Person:
    
 
   def set_value(self):
-    print('Имя: {}. Фамилия: {}. Пол: {}. email:{}'.format(self.name, self.surname, self.gender, self.email))  
+    print('РРјСЏ: {}. Р¤Р°РјРёР»РёСЏ: {}. РџРѕР»: {}. email:{}'.format(self.name, self.surname, self.gender, self.email))  
 
-person1 = Person(input('Введите имя участника: ').capitalize(), input('Введите фамилию участника: ').capitalize(), input('Введите пол участника: ').capitalize(), input('Введите email участника: '))
+person1 = Person(input('Р’РІРµРґРёС‚Рµ РёРјСЏ СѓС‡Р°СЃС‚РЅРёРєР°: ').capitalize(), input('Р’РІРµРґРёС‚Рµ С„Р°РјРёР»РёСЋ СѓС‡Р°СЃС‚РЅРёРєР°: ').capitalize(), input('Р’РІРµРґРёС‚Рµ РїРѕР» СѓС‡Р°СЃС‚РЅРёРєР°: ').capitalize(), input('Р’РІРµРґРёС‚Рµ email СѓС‡Р°СЃС‚РЅРёРєР°: '))
 
 
 print()
@@ -31,7 +31,7 @@ elif response.status_code == 404:
 
 with open("foto.png", "wb") as file:
   file.write(response.content)  
-  print('Аватар загружен')
+  print('РђРІР°С‚Р°СЂ Р·Р°РіСЂСѓР¶РµРЅ')
   file.write(response.content) 
   print('Status_code', response.status_code)
   print('Encoding', response.encoding)  
