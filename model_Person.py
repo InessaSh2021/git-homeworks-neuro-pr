@@ -5,15 +5,15 @@ url = 'https://vk.com/id281950100?z=photo281950100_384882748%2Fphotos281950100'
 class Person:
   '''Модель участника сайта'''
   
-  def __init__(self, name, surname, sex, email):
+  def __init__(self, name, surname, gender, email):
     self.name = name
     self.surname = surname
-    self.sex = sex    
+    self.gender = gender    
     self.email = email
    
 
   def set_value(self):
-    print('Имя: {}. Фамилия: {}. Пол: {}. email:{}'.format(self.name, self.surname, self.sex, self.email))  
+    print('Имя: {}. Фамилия: {}. Пол: {}. email:{}'.format(self.name, self.surname, self.gender, self.email))  
 
 person1 = Person(input('Введите имя участника: ').capitalize(), input('Введите фамилию участника: ').capitalize(), input('Введите пол участника: ').capitalize(), input('Введите email участника: '))
 
